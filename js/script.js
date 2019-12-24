@@ -156,7 +156,7 @@ chooseSum.addEventListener("input", function() {
     appData.monthIncome = save/100/12*percent;
     appData.yearIncome = save/100*percent;
 
-    monthsavingsValue.textContent = appData.monthIncome;
+    monthsavingsValue.textContent = (appData.monthIncome).toFixed(2);
     yearsavingsValue.textContent = appData.yearIncome;
   } else {
     monthsavingsValue.textContent = "error!";
